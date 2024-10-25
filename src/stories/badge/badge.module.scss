@@ -1,0 +1,24 @@
+@import './../../fonts.scss';
+
+.badge {
+  background-color: var(--color-surface-high);
+  border-radius: var(--radius-2xs);
+  padding: var(--spacing-4xs) var(--spacing-3xs);
+  font-weight: 700;
+  @include body-s;
+
+  &[data-variant="positive"] {
+    background-color: var(--color-surface-positive);
+  }
+
+  &[data-variant="negative"] {
+    background-color: var(--color-surface-negative);
+  }
+
+
+  @media (min-width: 769px) {
+    padding: var(--spacing-3xs) var(--spacing-2xs);
+    border-radius: var(--radius-xs);
+  }
+
+}

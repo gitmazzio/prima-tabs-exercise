@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap');
+
+/* Definisci mixin per la tipografia */
+@mixin body-m {
+    font-size: 14px;
+    line-height: 150%;
+    font-family: 'Inter', sans-serif;
+}
+
+@mixin body-s {
+    font-size: 12px;
+    line-height: 150%;
+    font-family: 'Inter', sans-serif;
+}
+
+// /* Se vuoi, puoi creare delle classi base */
+// .body-m {
+//     @include body-m;
+// }
+
+// .body-s {
+//     @include body-s;
+// }

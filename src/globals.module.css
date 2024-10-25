@@ -1,1 +1,27 @@
+:root {
+    /* colors */
+    --color-on-neutral: #1B2134;
+    --color-surface-high: #F1F1F7;
+    --color-surface-positive: #B1FFC7;
+    --color-surface-negative: #FFBFB1;
 
+    /* spacing */
+    --spacing-0: 0px;
+    --spacing-4xs: 2px;
+    --spacing-3xs: 4px;
+    --spacing-2xs: 8px;
+    --spacing-xs: 12px;
+    --spacing-s: 16px;
+    --spacing-m: 20px;
+    --spacing-l: 24px;
+    --spacing-xl: 32px;
+    --spacing-2xl: 48px;
+
+    /* radius */
+    --radius-2xs: 8px;
+    --radius-xs: 12px;
+}
+
+body {
+    color: var(--color-on-neutral);
+}
