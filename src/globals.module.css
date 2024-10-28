@@ -5,6 +5,18 @@
     --color-surface-positive: #B1FFC7;
     --color-surface-negative: #FFBFB1;
 
+    --color-surface-hover: #F6F6FA;
+    --color-surface-active: #F1F1F7;
+
+
+    --color-inverse: #1B2134;
+    --color-on-inverse: #FFFFFF;
+
+    --color-inverse-hover: #343A4E;
+    --color-inverse-active: #585D71;
+
+    --border-outline: #D3D3DC;
+    --border-outline-hover: #C4C5CF;
     /* spacing */
     --spacing-0: 0px;
     --spacing-4xs: 2px;

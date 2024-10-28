@@ -1,5 +1,4 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import { fn } from '@storybook/test';
 
 import { Badge } from './badge';
 
@@ -15,9 +14,18 @@ const meta = {
   tags: ['autodocs'],
   // More on argTypes: https://storybook.js.org/docs/api/argtypes
   argTypes: {
+    label: {
+      control: 'text',
+      description: 'Overwritten description',
+    },
+    variant: {
+      description: 'Variant of the badge',
+    },
   },
   // Use `fn` to spy on the onClick arg, which will appear in the actions panel once invoked: https://storybook.js.org/docs/essentials/actions#action-args
-  args: {},
+  args: {
+    variant: "neutral"
+  },
 } satisfies Meta<typeof Badge>;
 
 export default meta;
@@ -30,23 +38,3 @@ export const Primary: Story = {
 
   },
 };
-
-// export const Secondary: Story = {
-//   args: {
-//     label: 'Button',
-//   },
-// };
-
-// export const Large: Story = {
-//   args: {
-//     size: 'large',
-//     label: 'Button',
-//   },
-// };
-
-// export const Small: Story = {
-//   args: {
-//     size: 'small',
-//     label: 'Button',
-//   },
-// };
