@@ -1,0 +1,28 @@
+.root {
+    position: relative;
+
+    .tabs {
+        display: flex;
+        flex-direction: row;
+        gap: var(--spacing-2xs);
+        overflow-x: scroll;
+        scrollbar-width: none;
+        padding: var(--spacing-xs);
+
+        @media (min-width: 769px) {
+            gap: var(--spacing-xs);
+        }
+
+        &[data-variant="underline"] {
+            gap: var(--spacing-l);
+
+            @media (min-width: 769px) {
+                gap: var(--spacing-xl);
+            }
+        }
+    }
+
+    .content {
+        padding: 0 var(--spacing-xs);
+    }
+}

@@ -4,6 +4,8 @@
     @include body-m;
     border-radius: 100px;
     display: flex;
+    flex-direction: row;
+    gap: var(--spacing-xs);
     justify-content: center;
     align-items: center;
     cursor: pointer;
@@ -15,6 +17,7 @@
     color: var(--color-inverse);
     background-color: var(--color-on-inverse);
     border: 1px solid var(--border-outline);
+    flex: none;
 
     @media (min-width: 769px) {
         height: 50px;
