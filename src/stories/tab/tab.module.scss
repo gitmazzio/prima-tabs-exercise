@@ -1,7 +1,7 @@
-@import './../../styles/fonts.scss';
+@use '../../styles/fonts.scss' as fonts;
 
 .tab {
-    @include body-m;
+    @include fonts.body-m;
     border-radius: 100px;
     display: flex;
     flex-direction: row;

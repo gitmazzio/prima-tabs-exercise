@@ -1,4 +1,4 @@
-@import './../../styles/fonts.scss';
+@use '../../styles/fonts.scss' as fonts;
 
 .badge {
   background-color: var(--color-surface-high);
@@ -6,7 +6,7 @@
   padding: var(--spacing-4xs) var(--spacing-3xs);
   font-weight: 700;
   color: var(--color-on-neutral);
-  @include body-s;
+  @include fonts.body-s;
 
   &[data-variant="positive"] {
     background-color: var(--color-surface-positive);
